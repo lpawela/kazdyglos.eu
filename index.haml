@@ -1,0 +1,297 @@
+!!!
+%html{lang: 'en'}
+  %head
+    %title
+    %meta{charset: 'utf-8'}/
+    %meta{content: 'width=device-width, initial-scale=1, maximum-scale=1', name: 'viewport'}/
+    %link{href: 'css/reset.css', media: 'screen', rel: 'stylesheet', type: 'text/css'}/
+    %link{href: 'css/style.css?v=2.2', media: 'screen', rel: 'stylesheet', type: 'text/css'}/
+    %link{href: 'css/zerogrid.css?v=2.2', media: 'all', rel: 'stylesheet', type: 'text/css'}/
+    %link{href: 'css/responsive.css', media: 'all', rel: 'stylesheet', type: 'text/css'}/
+    %link{href: 'css/responsiveslides.css', rel: 'stylesheet'}/
+    %script{src: 'js/jquery-1.6.3.min.js', type: 'text/javascript'}
+    %script{src: 'js/FF-cash.js', type: 'text/javascript'}
+    %script{src: 'js/jquery.easing.1.3.js', type: 'text/javascript'}
+    %script{src: 'js/tms-0.3.js', type: 'text/javascript'}
+    %script{src: 'js/tms_presets.js', type: 'text/javascript'}
+    %script{src: 'js/jcarousellite_1.0.1.js', type: 'text/javascript'}
+    %script{src: 'js/css3-mediaqueries.js', type: 'text/javascript'}
+    %script{src: 'js/responsiveslides.js'}
+    /[if lt IE 8]
+      <div style=' clear: both; text-align:center; position: relative;'>
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+      </a>
+      </div>
+    /[if lt IE 9]
+      <script type="text/javascript" src="js/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+  %body#page1
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=570311983081363&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      $('span#u_0_2').css('color', '#FFFFFF');
+    / ==============================header=================================
+    %header
+      .menu-row
+        .main.zerogrid
+          %nav.wrapper
+            %ul.menu
+              %li
+                %a.active{href: 'index.html'} Strona główna
+              %li
+                %a{href: '#comments'} Komentarze
+              %li
+                %a{href: '#reviews'} Recenzje
+              %li
+                %a{href: 'authors.html'} O autorach
+              %li
+                %a.color-3{href: 'buy.html'} Jak kupić książkę?
+      .row-bot
+        .row-bot-bg
+          .main.zerogrid
+            .wrapper.p6
+              %h1
+                %ul.list-3
+                  %li
+                    %a{href: 'toc.html'} Spis treści ksiązki
+                  %li
+                    %a{href: 'about.html'} Książka w pigułce
+                  %li
+                    %a{href: 'trivia.html'} Ramki
+                  %li
+                    %a{href: 'download/index_file.pdf'} Indeksy
+                  %li
+                    %a{href: 'images.html'} Rysunki Marka Wójcikiewicza
+                  %li
+                    %a{href: 'bibliography.html'} Literatura
+                  %li
+                    %a{href: 'media.html'} Książka w mediach
+                  %li
+                    %a{href: 'download/errata.pdf'} Errata
+                  %li
+                    %a{href: 'https://www.facebook.com/kazdy.glos'} Facebook Fanpage
+                    .fb-like{"data-colorscheme" => "dark", "data-action" => "like", "data-href" => "https://www.facebook.com/kazdy.glos", "data-layout" => "standard", "data-share" => "false", "data-show-faces" => "false", "data-width" => "200"}
+                  %li
+                    #clustrmaps-widget
+                    :javascript
+                      var _clustrmaps = {'url' : 'http://kazdyglos.eu', 'user' : 1147266, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2014-06-26', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();
+                    %noscript
+                      %a{href: "http://www3.clustrmaps.com/user/c93118182"}
+                        %img{alt: "Locations of visitors to this page", src: "http://www3.clustrmaps.com/stats/maps-no_clusters/kazdyglos.eu-thumb.jpg"}/
+                  %li
+                    %a{href: 'http://www.cbip.uj.edu.pl/symp15'} Sympozjum 2015
+              %h2.thin
+                %img.indent-bot3{alt: 'okladka', src: 'images/cover.jpg'}
+                %p.aligncenter
+                  %a.small{href: "buy.html"}
+                    Zobacz jak zamówić książkę
+                %p
+                  %ul
+                    %span.red Aktualności
+                    %li.small
+                      %a{href: "https://www.rmf24.pl/raporty/raport-wybory-do-parlamentu-europejskiego/fakty/news-w-wyborach-europejskich-nasza-ordynacja-mniej-premiuje-duze-,nId,3000593"}
+                        Rozmowa radia RMF z Karolem Życzkowskim
+                    %li.small
+                      %a{href: "download/Bruksela19.pdf"}
+                        Perspektywy akcji wyborczej: Bruksela nie dla Zalewskiej
+                    %li.small
+                      %a{href: "download/kgsl6.pdf"}
+                        Kto otrzyma fotel europosła 2019?
+                %ul
+                  Autorzy
+                  %li
+                    %a{href: 'http://www.cft.edu.pl/p_view/p_view.php?login=kazik'} Kazimierz Rzążewski
+                  %li
+                    %a{href: 'http://www.im.uj.edu.pl/instytut/pracownik?id=172'} Wojciech Słomczyński
+                  %li.indent-bot2
+                    %a{href: 'http://chaos.if.uj.edu.pl/~karol/'} Karol Życzkowski
+                  %li Ilustrował Marek Wójcikiewicz
+                %ul.indent-top
+                  %li
+                    %a{href: 'http://wydawnictwo.sejm.gov.pl/publikacje/publikacja_823.html'} Wydawnictwo Sejmowe
+                  %li Warszawa 2014
+    / ==============================comments================================
+    %section.content-grey
+      .main.zerogrid
+        .wrapper
+          %article
+            .col-1-1
+              .wrap-col
+                %h3.text-2.center.p0 Każdy głos się liczy!
+                %p
+                  Jak losowano urzędników w starożytnych Atenach, a jak wybierano dożę w średniowiecznej Wenecji? W jaki
+                  sposób konklawe dokonuje wyboru papieża? Jak wyłania się najlepszego w zawodach łyżwiarskich, a jak
+                  zwycięzcę Konkursu Chopinowskiego? Czy wynik wyborów prezydenckich może zależeć od rodzaju systemu
+                  wyborczego, a skład parlamentu od wielkości i kształtu okręgów wyborczych?
+                %p
+                  Jak wybieramy posłów do Parlamentu Europejskiego, a jak decyzje podejmuje Rada Unii Europejskiej? Czy
+                  statystyczna analiza protokołów wyborczych może potwierdzić przypuszczenia o fałszowaniu wyników?
+                  Bogato ilustrowana książka przystępnie odpowiada na te pytania przedstawiając szeroki wachlarz
+                  zagadnień dotyczących zbiorowego podejmowania decyzji i dokonywania wyborów w każdej dziedzinie życia.
+                %a{href: 'mural.html'}
+                  %img.img-border{alt: 'jaka_metode_wbyierzemy?', src: 'images/metoda_glosowania.jpg'}
+                Mural na wybrzeżu Wisły w Toruniu, zdjęcie z czerwca 2013, fot. K. Życzkowski
+    %section#content
+      .main.zerogrid
+        .wrapper
+          %article
+            #comments.col-1-1
+              %h3.p0.center.text-2 Wypowiedzi o książce „Każdy głos się liczy”
+            .col-1-1
+              .wrap-col.content-grey
+                Świetna książka - pomyślana z rozmachem, poprowadzona z wyczuciem. Gdzie trzeba, zakreśla najszersze
+                podstawy, gdzie można - przytacza zabawne anegdoty. Pomaga zrozumieć nierozstrzygalne dylematy, pokazując
+                ich historyczne znaczenie. Jest tu i kronika krajowych zdarzeń, w których czytelnik mógł uczestniczyć i
+                zestawienie zjawisk rozrzuconych po całym świecie. Jest miejsce na historyczną erudycję i przystępną
+                matematykę, na sport i wino.
+                .indent-left2
+                  dr
+                  %span.bold Jarosław Flis,
+                  socjolog, Kraków (UJ)
+            .col-1-1
+              .wrap-col.content-grey
+                Znane powiedzenie głosi, że wojna to zbyt poważna sprawa, by powierzyć ją tylko generałom. W przypadku
+                książki
+                %span.italic Każdy głos się liczy
+                można je sparafrazować, mówiąc, że problematyka wyborcza to rzecz zbyt poważna, by scedować ją li-tylko
+                na konstytucjonalistów. Książkę napisano fachowo, żywym językiem oraz zilustrowano ciekawymi rysunkami.
+                .indent-left2
+                  prof.
+                  %span.bold Ryszard Małajny,
+                  prawnik, Katowice (UŚ)
+            .col-1-1
+              .wrap-col.content-grey
+                Jestem pod ogromnym wrażeniem książki. Przekonanie, że po jej lekturze będę glosował jeszcze bardziej
+                świadomie podnosi mnie na duchu.
+                .indent-left2
+                  %span.bold Leszek Mikos,
+                  Mistrz Mowy Polskiej Vox Populi 2014
+            .col-1-1
+              .wrap-col.content-grey
+                Przeczytałem z dużą frajdą. Książka arcyatrakcyjna i potrzebna jednocześnie. Arcyatrakcyjna, bo piękne
+                matematyczne umysły potrafią rzeczy polityczne zobaczyć z nieoczekiwanych perspektyw. Potrzebna, bo
+                czasem (coraz częściej) gubimy się w zawiłościach mechanizmów wyborczych, a ta książka nie tylko je
+                tłumaczy, ale przypomina przede wszystkim o możliwej sile naszego głosu.
+                .indent-left2
+                  prof.
+                  %span.bold Andrzej Nowak,
+                  historyk, Kraków (UJ, PAN)
+            .col-1-1
+              .wrap-col.content-grey
+                Z wydanych w Polsce pozycji na temat wyborów ta książka jest zdecydowanie najciekawsza. Jest też lekko i
+                zabawnie napisana, co bardzo uprzyjemnia czytanie:)
+                .indent-left2
+                  %span.bold Pawel Przewłocki,
+                  fizyk, Warszawa (autor
+                  %a{href: 'http://stv.org.pl/'} strony
+                  o preferencyjnej ordynacji wyborczej)
+            .col-1-1
+              .wrap-col.content-grey
+                Książka jest ładnie wydana i niedroga, a przede wszystkim ciekawa, to widać już przy pierwszym jej
+                'kartkowaniu'.
+                .indent-left2
+                  dr hab.
+                  %span.bold Tadeusz Sozański,
+                  socjolog, Kraków (Uniwersytet Pedagogiczny)
+            .col-1-1
+              .wrap-col.content-grey
+                Leibniz napisał trzy wieki temu: „kiedy Bóg liczy, świat się staje". Matematycy nie mają mocy boskiej, ale
+                po przeczytaniu tej książki można powiedzieć: „kiedy oni liczą, świat się wyjaśnia". Jak obowiązujący
+                sposób ustalania wyników wyborów wpływa na to, kto będzie rządzić? Jak matematycznie stwierdzić, że wyniki
+                były sfałszowane albo - delikatniej mówiąc - nierzetelne? Czym śmierdzi kuchnia dzisiejszej polityki? Ta
+                książka nie jest bynajmniej metodologiczną rozprawą matematyczną. To pasjonujący traktat polityczny!
+                .indent-left2
+                  %span.bold Jerzy Surdykowski,
+                  pisarz i publicysta, były dyplomata, mieszka na wsi pod Krakowem.
+            .col-1-1
+              .wrap-col.content-grey
+                To wyjątkowe opracowanie, odnoszące się do najważniejszych kwestii związanych z systemami wyborczymi,
+                zawierające fachowo i precyzyjnie omówione kluczowe wątki z tej problematyki. Całość jest interesująca
+                i bardzo starannie dopracowana edytorsko.
+                .indent-left2
+                  prof.
+                  %span.bold Mirosław Szreder,
+                  statystyk, Gdańsk (UG)
+            .col-1-1
+              .wrap-col.content-grey
+                Paradygmat poszukiwania równowagi w Unii Europejskiej jest na naszych oczach zastępowany poszukiwaniem gwarancji dla
+                interesów najbardziej podmiotowych państw Unii. Proces ten odbywa się przede wszystkim na polu proceduralnym, którego
+                sercem są modele podejmowania decyzji. Badania przedstawione w tej książce są unikalnym przewodnikiem po tej materii.
+                .indent-left2
+                  %span.bold Konrad Szymański,
+                  Warszawa, poseł do PE w latach 2004-2014,
+            .col-1-1
+              .wrap-col.content-grey
+                Przed kilkoma laty autorzy książki
+                %span.italic Każdy głos się liczy
+                stworzyli system głosowania w Radzie Unii Europejskiej zapewniający możliwie sprawiedliwy podział głosów
+                przyznanych przedstawicielom poszczególnych państw Wspólnoty, zważywszy różnice ich wielkości. Choć
+                %a{href: 'http://jagielloniancompromise.eu'} Kompromis Jagielloński
+                nie zyskał wtedy politycznej akceptacji w międzyrządowych debatach, to jego
+                wielką zaletą jest klarowność, oparcie na obiektywnych i znanych publicznie zasadach.  Przedstawienie
+                naukowo uzasadnionych racji na rzecz systemu głosów ważonych było dobrym argumentem polskich
+                negocjatorów traktatu lizbońskiego, o czym mogłem się przekonać jako jeden z uczestników rozmów. Pomogło
+                ono odroczyć wejście w życie niekorzystnej dla Polski zasady tak zwanej podwójnej większości w
+                głosowaniach w Radzie Unii Europejskiej. Narastający kryzys demokracji przedstawicielskiej w Europie,
+                przejawiający się spadającą frekwencją wyborczą i poparciem dla ruchów kontestujących obecny model
+                demokracji, sprawia, że system ten może znów powrócić jako realna propozycja polityczna.
+                .indent-left2
+                  %span.bold Jan Tombiński,
+                  dyplomata, Kijów (w latach 2007-2012 stały przedstawiciel RP przy Unii Europejskiej; od roku 2012
+                  ambasador UE na Ukrainie)
+            .col-1-1
+              .wrap-col.content-grey
+                Gdy przyjdzie na to czas, kiedyś uliczni dobosze a dziś wszelakiego rodzaju media elektroniczne i
+                papierowe, wzywają nas byśmy dobrowolnie — gdy żyjemy w krajach demokracji — lub z obowiązku albo pod
+                przymusem, gdy mamy mniej szczęścia, udali się do wyborów. Przekonuje się nas, że to nasz obywatelski,
+                albo „psi” obowiązek, żebyśmy zabrali głos w święcie demokracji itp.
+                Ale, jak to śpiewano w modnej niegdyś operetce Giberta i Sullivana
+                %span.italic
+                  H.M.S Pinafore „Things are seldom what they seem”
+                [Rzeczy rzadko są tak proste]. Jeżeli chcecie Państwo wiedzieć w
+                czym będziecie brali udział za kilka dni, miesięcy, lat, gdy znowu zawarczą wyborcze werble zajrzyjcie
+                do książki
+                %span.italic.bold
+                  %a{href: '#'} Każdy głos się liczy. Wędrówka przez krainę wyborów.
+                To będzie pouczająca wędrówka dla każdego: spacerowicza, turysty a
+                nawet zwolennika sportów ekstremalnych. W drogę!
+                .indent-left2
+                  prof.
+                  %span.bold Łukasz Turski,
+                  fizyk, Warszawa (CFT PAN)
+    / ==============================reviews=================================
+    %section.content-grey
+      .main.zerogrid
+        .wrapper
+          %article#reviews.col-1-1
+            %h3.p0.center.text-2 Recenzje książki „Każdy głos się liczy”
+            %ul.list-1
+              %li
+                .bold.inline Wojciech Orliński,
+                %a{href: 'download/orlinski.pdf'} Lepiej liczyć głosy niż trupy,
+                %a{href: 'http://wyborcza.pl/piatekekstra/1,137943,16012466.html'} Gazeta Wyborcza 23 05. 2014
+              %li
+                .bold.inline Mariusz Karwowski,
+                %a{href: 'download/forum_rec14.pdf'} Wyborcza matematyka
+                Forum Akademickie, recenzja, 10/2014
+              %li
+                .bold.inline Jacek Haman,
+                %a{href: 'download/rec_haman.pdf'} recenzja,
+                Decyzje 22
+              %li
+                .bold.inline Jerzy J. Wiatr,
+                %a{href: 'download/jwrec.pdf'} recenzja,
+            %img.center{alt: 'Krytyka', src: 'images/krytyka.jpg'}
+            Mural na wybrzeżu Wisły w Toruniu, zdjęcie z czerwca 2013, fot. K. Życzkowski
+    / ==============================footer=================================
+    %footer
+      .main.zerogrid
+        .aligncenter
+          %p.p0 Przygotowanie witryny: Łukasz Pawela, maj 2014
